@@ -11,6 +11,9 @@ pipeline {
           
           stage("stage1"){
             steps{
+              script {
+                sh " echo 'hello world from scripts sction' "
+                }
               echo 'hello world'
               echo "${params.project}"
               echo "${params.author}"
