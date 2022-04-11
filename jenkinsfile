@@ -1,0 +1,20 @@
+pipeline {
+  
+  parameters {
+      choice( name: 'project', choice: 'proj1\nproj2', description: 'project name' )
+      string ( name: 'author', defaultValue: 'admin', description: 'author name')
+         }
+      
+      agent{
+          any{
+             }
+           }
+           
+      stages {
+          
+          stage("stage1"){
+              echo hello world
+              echo params.project
+              echo params.author
+              }
+           }   
