@@ -5,11 +5,8 @@ pipeline {
       string ( name: 'author', defaultValue: 'admin', description: 'author name')
          }
       
-      agent{
-          any{
-             }
-           }
-           
+      agent any
+      
       stages {
           
           stage("stage1"){
