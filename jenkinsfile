@@ -12,8 +12,8 @@ pipeline {
           stage("stage1"){
             steps{
               echo 'hello world'
-              echo 'params.project'
-              echo 'params.author'
+              echo '${params.project}'
+              echo '${params.author}'
               }
               }
            }   
